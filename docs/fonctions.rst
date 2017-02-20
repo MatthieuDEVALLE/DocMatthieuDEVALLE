@@ -31,11 +31,11 @@ Permet de rejoindre la partie.
 **"nom"** (string): pseudo du joueur qui rejoint la partie
 
 Retourne:
-- 0 si tout c'est bien passe
-- 1 si le numero de partie n'existe pas
-- 2 si le nom de joueur est deja pris
-- 3 si la partie est deja lance (top)
-- 4 si les types ne sont pas respecte
+  - 0 si tout c'est bien passe
+  - 1 si le numero de partie n'existe pas
+  - 2 si le nom de joueur est deja pris
+  - 3 si la partie est deja lance (top)
+  - 4 si les types ne sont pas respecte
 
 Exemple: 
 
@@ -95,12 +95,12 @@ Méthode permettant de passer un ordre d'achat.
 
 Retourne:
 
-*0 si l'ordre a été exécuté directement et que tout son volume a été écoulé
-*4 si les types ne sont pas respectés
-*5 si volume <= 0
-*6 si prix <= 0
-*7 si vous n'avez pas assez d'argent pour acheter cette quantité (prix*volume)
-*sinon renvoie l'identifiant de l'ordre (nombre positif)
+  - 0 si l'ordre a été exécuté directement et que tout son volume a été écoulé
+  - 4 si les types ne sont pas respectés
+  - 5 si volume <= 0
+  - 6 si prix <= 0
+  - 7 si vous n'avez pas assez d'argent pour acheter cette quantité (prix*volume)
+  - sinon renvoie l'identifiant de l'ordre (nombre positif)
 
 Exemple: 
 
@@ -119,13 +119,12 @@ Permet de passer un ordre de vente.
 **"volume"** (integer): volume d'action à vendre
 
 Retourne:
-
-*0 si l'ordre a été executé directement et que tout son volume a été écoulé
-*4 si les types ne sont pas respectés
-*8 si volume <= 0
-*9 si prix <= 0
-*10 si vous n'avez pas assez d'action de ce type dans votre portefeuille
-*sinon renvoie l'identifiant de l'ordre (nombre positif)
+  - 0 si l'ordre a été executé directement et que tout son volume a été écoulé
+  - 4 si les types ne sont pas respectés
+  - 8 si volume <= 0
+  - 9 si prix <= 0
+  - 10 si vous n'avez pas assez d'action de ce type dans votre portefeuille
+  - sinon renvoie l'identifiant de l'ordre (nombre positif)
 
 Exemple: 
 
@@ -143,9 +142,8 @@ Liste tous les ordres d'achats pour tous les joueurs sur une action donnée.
 **"action"** (string): nom de l'action
 
 Retourne:
-
-* -4 si l'action n'existe pas
-* une liste de tuples triée par ordre de prix avantageux sous la forme:
+  - -4 si l'action n'existe pas
+  - une liste de tuples triée par ordre de prix avantageux sous la forme:
 
 ``(nom_acheteur, prix, volume)``
 
@@ -164,8 +162,8 @@ Liste tous les ordres de ventes pour tous les joueurs sur une action donnée.
 **"action"** (string): nom de l'action
 
 Retourne:
-*-4 si l'action n'existe pas
-*une liste de tuples triée par ordre de prix avantageux sous la forme:
+  - -4 si l'action n'existe pas
+  - une liste de tuples triée par ordre de prix avantageux sous la forme:
 
 ``(nom_acheteur, prix, volume)``
 
@@ -201,10 +199,9 @@ Permet de voir le volume restant pour un ordre transmis précédement.
 **"id_ordre"** (integer): id de l'ordre
  
 Retourne:
- 
-*0 si l'ordre n'existe plus ou est terminé
-*4 si les types ne sont pas respectés
-*sinon le volume restant en achat/vente.
+  - 0 si l'ordre n'existe plus ou est terminé
+  - 4 si les types ne sont pas respectés
+  - sinon le volume restant en achat/vente.
 
 Exemple: 
 
@@ -220,11 +217,10 @@ annulerOperation(self, id_ordre)
 Annule un ordre transmis précédemment afin de récupérer les fonds provisionnés.
 
 Retourne:
-
-*11 si l'ordre n'existe plus ou est termine
-*4 si les types ne sont pas respectes
-*le volume d'action restant si c'est un ordre de vente
-*les euros dépensés si c'est ordre d'achat
+  - 11 si l'ordre n'existe plus ou est termine
+  - 4 si les types ne sont pas respectes
+  - le volume d'action restant si c'est un ordre de vente
+  - les euros dépensés si c'est ordre d'achat
 
 **"id_ordre"** (integer): id de l'odre (récupérer à partir de la fonction operationsEnCours())
 
