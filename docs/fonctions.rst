@@ -130,6 +130,7 @@ Retourne:
 Exemple: 
 
 .. code-block:: python
+
 	r.bid("Trydea", 50, 10)
 	>>>0
 
@@ -206,6 +207,7 @@ Retourne:
 *sinon le volume restant en achat/vente.
 
 Exemple: 
+
 .. code-block:: python
 
 	r.suivreOperation(31416)
