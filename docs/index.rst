@@ -7,3 +7,15 @@ En POO (programmation orientée objet), une class est un ensemble de fonctions p
 Pour plus d'informations:
 
 https://openclassrooms.com/courses/apprenez-a-programmer-en-python/premiere-approche-des-classes
+
+
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+   
+   préliminaires
+   creation_partie
+   rejoindre_partie
+   lancement_partie
