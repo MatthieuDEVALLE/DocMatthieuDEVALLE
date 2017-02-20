@@ -7,13 +7,14 @@ Premièrement, on rejoint la partie, en indiquant son numéro et le pseudo que l
 
 ``r.rejoindrePartie(4488,MatthieuDevallé)``
 
-Puis on doit se synchrnoser avec les autres joueurs:
+Puis on doit se synchroniser avec les autres joueurs:
 
 ``r.top()``
 
 On a donc le code suivant pour rejoindre une partie: 
 
 .. code-block:: python
+
  r.rejoindrePartie(numéro,"pseudo")
  r.top()
 
