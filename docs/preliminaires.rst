@@ -8,5 +8,5 @@ Pour cela, il faut ce fichier dans le MEME dossier que le fichier courant puis d
 
   from client import Reseau
   r=Reseau() #On travaillera par la suite avec la variable r
-  
-:red:`Attention Le fichier client.py ne doit JAMAIS être modifié !`
+.. role:: red
+  :red:`Attention Le fichier client.py ne doit JAMAIS être modifié !`
