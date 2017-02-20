@@ -13,7 +13,7 @@ Crée la partie et renvoie l'id a communiqué oralement aux autres joueurs.
 
 **"nom"** (string): nom du joueur qui crée la partie
 
-Exemple_: 
+Exemple: 
 
 .. code-block:: python
 
@@ -37,7 +37,7 @@ Retourne:
 - 3 si la partie est deja lance (top)
 - 4 si les types ne sont pas respecte
 
-Exemple_: 
+Exemple: 
 
 .. code-block:: python
 
@@ -52,7 +52,7 @@ Deux possibilités:
   - si vous avez rejoint la partie, attend le top du créateur
   - si vous avez créé, lance la partie
 
-Exemple_: 
+Exemple: 
 
 .. code-block:: python
 
@@ -64,7 +64,7 @@ solde()
 
 Permet de voir notre prote-feuille d'actions et notre argent disponible
 
-_Exemple_: 
+Exemple: 
 
 .. code-block:: python
 
@@ -77,7 +77,7 @@ operationsEnCours(self)
  
 Retroune une liste d'entier, qui correspondent aux identifiants des ordres précédements transmis et qui ne sont pas encore terminer: on peut donc les suivres et les annuler.
 
-_Exemple_: 
+Exemple: 
 
 .. code-block:: python
 
@@ -102,7 +102,7 @@ Retourne:
 *7 si vous n'avez pas assez d'argent pour acheter cette quantité (prix*volume)
 *sinon renvoie l'identifiant de l'ordre (nombre positif)
 
-_Exemple_: 
+Exemple: 
 
 .. code-block:: python
 
@@ -127,7 +127,7 @@ Retourne:
 *10 si vous n'avez pas assez d'action de ce type dans votre portefeuille
 *sinon renvoie l'identifiant de l'ordre (nombre positif)
 
-_Exemple_: 
+Exemple: 
 
 .. code-block:: python
 	r.bid("Trydea", 50, 10)
@@ -148,7 +148,7 @@ Retourne:
 
 ``(nom_acheteur, prix, volume)``
 
-_Exemple_:
+Exemple:
 
 .. code-block:: python
 
@@ -168,7 +168,7 @@ Retourne:
 
 ``(nom_acheteur, prix, volume)``
 
-_Exemple_: 
+Exemple: 
 
 .. code-block:: python
 
@@ -185,7 +185,7 @@ Retourne une liste de tuples trier par ordre chronologique. Sous la forme:
 
 **"action"** (string): nom de l'action
 
-_Exemple_: 
+Exemple: 
 
 .. code-block:: python
 
@@ -205,7 +205,7 @@ Retourne:
 *4 si les types ne sont pas respectés
 *sinon le volume restant en achat/vente.
 
-_Exemple_: 
+Exemple: 
 .. code-block:: python
 
 	r.suivreOperation(31416)
@@ -226,7 +226,7 @@ Retourne:
 
 **"id_ordre"** (integer): id de l'odre (récupérer à partir de la fonction operationsEnCours())
 
-_Exemple_: 
+Exemple: 
 
 .. code-block:: python
 
@@ -238,7 +238,7 @@ fin(self)
 
 Renvoie un dictionnaire le temps restant (en s) avant la fin de la partie (string:entier). Si la partie est terminé, affiche le classement (string:liste).
 
-_Exemple_:
+Exemple:
 
 .. code-block:: python
 
