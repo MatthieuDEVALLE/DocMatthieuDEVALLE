@@ -13,7 +13,7 @@ Crée la partie et renvoie l'id a communiqué oralement aux autres joueurs.
 
 **"nom"** (string): nom du joueur qui crée la partie
 
-_Exemple_: 
+Exemple_: 
 
 .. code-block:: python
 
@@ -31,13 +31,14 @@ Permet de rejoindre la partie.
 **"nom"** (string): pseudo du joueur qui rejoint la partie
 
 Retourne:
-*0 si tout c'est bien passe
-*1 si le numero de partie n'existe pas
-*2 si le nom de joueur est deja pris
-*3 si la partie est deja lance (top)
-*4 si les types ne sont pas respecte
+- 0 si tout c'est bien passe
+- 1 si le numero de partie n'existe pas
+- 2 si le nom de joueur est deja pris
+- 3 si la partie est deja lance (top)
+- 4 si les types ne sont pas respecte
 
-_Exemple_: 
+Exemple_: 
+
 .. code-block:: python
 
 	r.rejoindrePartie(31416,"MatthieuDev")
@@ -48,10 +49,10 @@ top(self)
 ---------
 
 Deux possibilités:
-  *si vous avez rejoint la partie, attend le top du créateur
-  *si vous avez créé, lance la partie
+  - si vous avez rejoint la partie, attend le top du créateur
+  - si vous avez créé, lance la partie
 
-_Exemple_: 
+Exemple_: 
 
 .. code-block:: python
 
