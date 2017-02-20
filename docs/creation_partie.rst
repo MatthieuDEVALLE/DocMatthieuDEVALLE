@@ -6,6 +6,7 @@ Une fois que la connexion est effectuée, on doit pouvoir choisir entre créer u
 Pour créer une partie: 
 
 .. code-block:: python
+
   num_partie=r.creerPartie("monNom") #On crée la partie
   print(num_partie) #On récupère son numéro
 
