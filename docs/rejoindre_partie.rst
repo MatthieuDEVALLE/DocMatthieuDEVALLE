@@ -5,17 +5,17 @@ Une fois la partie crée par l'un des participants, les autres doivent pouvoir l
 
 Premièrement, on rejoint la partie, en indiquant son numéro et le pseudo que l'on souhaite, par exemple,
 
-''r.rejoindrePartie(4488,MatthieuDevallé)''
+``r.rejoindrePartie(4488,MatthieuDevallé)``
 
 Puis on doit se synchrnoser avec les autres joueurs:
 
-''r.top()''
+``r.top()``
 
 On a donc le code suivant pour rejoindre une partie: 
 
-..code-block:: python
-r.rejoindrePartie(numéro,"pseudo")
-r.top()
+.. code-block:: python
+ r.rejoindrePartie(numéro,"pseudo")
+ r.top()
 
 
-<font color="red"> Attention: On ne reprends pas la main tant que le créateur n'a pas lui même taper <code>r.top()</code></font>
+**Attention: On ne reprends pas la main tant que le créateur n'a pas lui même taper ``r.top()``**
