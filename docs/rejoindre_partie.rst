@@ -18,4 +18,4 @@ On a donc le code suivant pour rejoindre une partie:
  r.top()
 
 
-**Attention: On ne reprends pas la main tant que le créateur n'a pas lui même taper ``r.top()``**
+**Attention: On ne reprends pas la main tant que le créateur n'a pas lui même taper r.top()**
