@@ -19,3 +19,4 @@ Contents:
    creation_partie
    rejoindre_partie
    lancement_partie
+   fonctions
