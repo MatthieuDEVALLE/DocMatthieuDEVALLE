@@ -15,7 +15,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
    
-   préliminaires
+   preliminaires
    creation_partie
    rejoindre_partie
    lancement_partie
