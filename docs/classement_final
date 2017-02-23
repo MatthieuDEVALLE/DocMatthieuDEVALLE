@@ -1,0 +1,9 @@
+Informations sur le classement final
+====================================
+		
+		Il y a plusieurs cas (on note j1 et j2 les joueurs):
+			- dans le cas où j1 (ou j2) a vendu les deux types d'actions, il gagne
+			- dans le cas où j1 (ou j2) a vendu au moins un type d'action et pas l'autre, il gagne
+			- dans le cas où les deux n'ont que de l'argent, le plus riche gagne
+			- dans le cas où les deux ont plusieurs actions, on compare leur nombre d'action et leur argent, le plus riche en action gagne sauf si ils ont le même nombre d'actions (le plus riche gagne)
+			- dans le meilleur cas, s'ils ont vendu deux types d'actions, on compare leur nombre d'action ainsi que leur argent, le plus riche gagne
