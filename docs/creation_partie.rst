@@ -1,5 +1,5 @@
 Création d’une partie
-	=====================
+=====================
 	
   Une fois que la connexion est effectuée, on doit pouvoir choisir entre créer une partie ou en rejoindre une (à faire vous même...).
   Pour créer une partie:
